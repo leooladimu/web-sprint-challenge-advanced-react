@@ -1,7 +1,6 @@
 import React from "react";
 import MutationObserver from 'mutationobserver-shim';
-import { render } from "@testing-library/react";
-import {screen} from '@testing-library/dom';
+import { render, screen } from "@testing-library/react";
 import CheckoutForm from "./CheckoutForm";
 import userEvent from "@testing-library/user-event";
 
@@ -28,6 +27,7 @@ test("shows success message on submit with form details", () => {
         userEvent.type(zip, '92277');
 
     const button = screen.getByRole('button');
+        console.log(button);
         userEvent.click('button');
 
     const successMessage = screen.getByTestId(/successMessage/i);
