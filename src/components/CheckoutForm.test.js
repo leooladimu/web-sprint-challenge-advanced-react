@@ -1,6 +1,7 @@
 import React from "react";
 import MutationObserver from 'mutationobserver-shim';
 import { render } from "@testing-library/react";
+import {screen} from '@testing-library/dom';
 import CheckoutForm from "./CheckoutForm";
 import userEvent from "@testing-library/user-event";
 
